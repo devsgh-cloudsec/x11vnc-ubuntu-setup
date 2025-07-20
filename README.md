@@ -5,7 +5,6 @@ Accessing Ubuntu remotely using VNC can be tricky, especially when the built-in 
 * Installing and configuring `x11vnc` when vino fails
 * Securing the setup with password authentication
 * Starting VNC on boot using `systemd`
-* Troubleshooting “Connection refused” errors
 
 This guide includes a **well-tested and validated script to enable hassle-free RealVNC access from Windows 11**.
 

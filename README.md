@@ -1,15 +1,8 @@
 # x11vnc-ubuntu-setup
 Fully automated x11vnc setup for Ubuntu 22.04 with RealVNC support
 
-Perfect! Here is the **finalized Blogger-ready tutorial**, now updated with:
 
-* ✅ Your GitHub link included.
-* ✅ Reworded heading: **“✅ Use This Final Working systemd Script”** → **“✅ Working systemd Script (Tested & Working Perfectly)”**.
-* ✅ Reworded line: “tested and confirmed to work reliably with RealVNC” → now includes **RealVNC client on Windows 11**.
-
----
-
-# 📡 How to Set Up VNC on Ubuntu 22.04 LTS for RealVNC Access from Windows
+# How to Set Up VNC on Ubuntu 22.04 LTS for RealVNC Access from Windows
 
 Accessing Ubuntu remotely using VNC can be tricky, especially when the built-in GNOME VNC server (vino) is disabled or unsupported. In this tutorial, we'll walk you through:
 
@@ -45,7 +38,7 @@ x11vnc -storepasswd
 
 ---
 
-## 🔐 Step 2: Allow VNC Port Through the Firewall
+## Step 2: Allow VNC Port Through the Firewall
 
 ### 2.1 Open the Port
 
@@ -65,11 +58,10 @@ sudo ufw reload
 
 ---
 
-## 🔁 Step 3: Set Up x11vnc to Start on Boot with systemd
+## Step 3: Set Up x11vnc to Start on Boot with systemd
 
 To make VNC available automatically after each reboot, we’ll configure a systemd service.
 
-### ✅ Working systemd Script (Tested & Working Perfectly)
 
 ```ini
 [Unit]
@@ -111,7 +103,7 @@ sudo systemctl enable --now x11vnc
 
 ---
 
-## 🔁 Step 4: Enable GUI Auto-login (Recommended)
+## Step 4: Enable GUI Auto-login (Recommended)
 
 x11vnc requires the GUI (display `:0`) to be active. This ensures it’s ready at boot.
 
@@ -139,7 +131,7 @@ sudo systemctl restart gdm
 
 ---
 
-## ✅ Step 5: Verify the Setup
+## Step 5: Verify the Setup
 
 ### 5.1 Check if x11vnc Is Listening
 
@@ -158,7 +150,7 @@ ss -tulnp | grep 5900
 
 ---
 
-## 🧪 Troubleshooting
+## Troubleshooting
 
 | Issue                   | Fix                                                                     |
 | ----------------------- | ----------------------------------------------------------------------- |
@@ -169,7 +161,7 @@ ss -tulnp | grep 5900
 
 ---
 
-## 📦 Optional: Run Everything with a Single Script
+## Optional: Run Everything with a Single Script
 
 If you're a beginner or want to automate everything, here’s how to use the `setup-x11vnc.sh` deployment script.
 
@@ -186,7 +178,7 @@ Press `Ctrl + Alt + T` or open “Terminal” from your apps menu.
 #### 2. Download the Script
 
 ```bash
-wget https://raw.githubusercontent.com/devsingh-cloud/x11vnc-ubuntu-setup/main/setup-x11vnc.sh
+wget https://raw.githubusercontent.com/devsgh-cloudsec/x11vnc-ubuntu-setup/main/setup-x11vnc.sh
 ```
 
 ---
@@ -243,9 +235,14 @@ The `.zip` bundle includes:
 
 You now have:
 
-✅ Secure VNC access on Ubuntu 22.04 LTS
-✅ Verified RealVNC connection from Windows 11
-✅ Auto-start on boot using systemd
-✅ Optional full automation with one shell script
+✅ Secure VNC access on Ubuntu 22.04 LTS  
+<br>
 
+✅ Verified RealVNC connection from Windows 11  
+<br>
+
+✅ Auto-start on boot using systemd  
+<br>
+
+✅ Optional full automation with one shell script
 

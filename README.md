@@ -1,18 +1,13 @@
-# x11vnc-ubuntu-setup
-Fully automated x11vnc setup for Ubuntu 22.04 with RealVNC support
-
-
-# How to Set Up VNC on Ubuntu 22.04 LTS for RealVNC Access from Windows
+# How to Access Ubuntu 22.04’s Desktop Remotely Using x11vnc and RealVNC from Windows 11
 
 Accessing Ubuntu remotely using VNC can be tricky, especially when the built-in GNOME VNC server (vino) is disabled or unsupported. In this tutorial, we'll walk you through:
 
-* Enabling GNOME’s VNC server (vino)
-* Installing and configuring `x11vnc` if vino fails
+* Installing and configuring `x11vnc` when vino fails
 * Securing the setup with password authentication
 * Starting VNC on boot using `systemd`
 * Troubleshooting “Connection refused” errors
 
-This guide shows the **final working script** only — **tested and confirmed to work perfectly with RealVNC client on Windows 11**.
+This guide includes a **well-tested and validated script to enable hassle-free RealVNC access from Windows 11**.
 
 ---
 
@@ -236,13 +231,7 @@ The `.zip` bundle includes:
 You now have:
 
 ✅ Secure VNC access on Ubuntu 22.04 LTS  
-<br>
-
 ✅ Verified RealVNC connection from Windows 11  
-<br>
-
 ✅ Auto-start on boot using systemd  
-<br>
-
 ✅ Optional full automation with one shell script
 
